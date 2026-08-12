@@ -1,6 +1,6 @@
 # HTML Learning Basics 🚀
 
-A clean, practical playground repository dedicated to learning the foundational core concepts of HTML5 structures, browser interactions, and baseline styling layouts.
+A clean, practical playground repository dedicated to learning basics the foundational core concepts of HTML5 structures, browser interactions, and baseline styling layouts.
 
 ## 🌐 Live Index Hub (GitHub Pages)
 
