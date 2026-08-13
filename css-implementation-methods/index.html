@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head> 
+    <title> css_implementation_methods </title>
+    <!-- Connecting your external CSS file -->
+    <link rel="stylesheet" href="s1.css">
+    
+    <!-- Internal CSS demonstration -->
+    <style>
+        .pink-text { color: pink; }
+    </style>
+</head>
+<body>
+
+    <h1> first heading</h1> 
+    <h2> second heading</h2>
+    <h3> third heading</h3>
+    <h4> fourth heading </h4>
+    <h5> fifth heading </h5>
+    <h6> sixth heading </h6>
+
+    <!-- Your working image -->
+    <img src="2.jpg" height="50" width="50">
+
+    <p class="pink-text"> hello my name is omi</p>
+    <p class="pink-text"> see my image</p>
+
+    <h1> marks sheet </h1>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th> english </th>
+            <th> maths </th>
+            <th> science </th>
+        </tr>
+        <tr>
+            <td> 70 </td>
+            <td> 80 </td>
+            <td> 90 </td>
+        </tr>
+        <tr>
+            <td> 50 </td>
+            <td> 60 </td>
+            <td> 70 </td>
+        </tr>
+        <tr>
+            <td> 60 </td>
+            <td> 70 </td>
+            <td> 80 </td>
+        </tr>
+    </table>
+
+    <h3>Registration form</h3>
+
+    <form>
+        FIRST Name:<br>
+        <input type="text" Placeholder="enter your name"><br><br>
+        
+        LAST NAME:<br>
+        <input type="text" placeholder="enter your last name"><br><br>
+        
+        PASSWORD:<br>
+        <input type="password" placeholder="enter password"><br><br>
+        
+        PHONE NUMBER:<br>
+        <input type="text" placeholder="enter your phone number"><br><br>
+
+        SELECT GENDER:<br>
+        <input type="radio" NAME="GENDER"> MALE
+        <input type="radio" NAME="GENDER"> FEMALE<br><br>
+
+        <button type="SUBMIT" value="SUBMIT">SUBMIT FORM</button>
+    </form>
+    <br>
+    
+    <h1>css=cascading style sheets</h1>
+    <h2>inline css ,internal css,external css</h2>
+    
+    <h3>inline css</h3>
+    <!-- Changed style to black so it's readable on your light grey background -->
+    <p style="color:black;">An inline CSS is used to apply a unique style to a single HTML element. An inline CSS uses the style attribute of an HTML element</p>
+
+    <p>MY NAME IS OMKAR</p>
+    <p style="color:orange;">MY NAME IS OMKAR</p>
+    <p>MY NAME IS OMKAR</p>
+    <p>MY NAME IS OMKAR</p>
+    <p>MY NAME IS OMKAR</p>
+
+    <h3> internal css </h3>
+    <p> An internal CSS is used to define a style for a single HTML page. An internal CSS is defined in the &lt;head&gt; section of an HTML page, within a &lt;style&gt; element. The following example sets the text color of ALL the &lt;h1&gt; elements (on that page) to blue, and the text color of ALL the &lt;p&gt; elements to red.</p>
+
+    <h3> external css</h3>
+    <p> An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage. Multiple webpages can use the same link to access the stylesheet. The link to an external style sheet is placed within the head section of the page. example &lt;head&gt;&lt;link rel="stylesheet" href="file.css"&gt;&lt;/head&gt;</p>
+
+</body>
+</html>

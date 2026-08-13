@@ -1,0 +1,16 @@
+/* Styling for all paragraphs */
+p {
+    color: #2c3e50; /* Dark slate grey for easy reading */
+}
+
+/* Styling for the webpage background */
+body {
+    background-color: #f4f7f6; /* Clean, soft light-grey background */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Styling for all headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #1a5276; /* Dark professional blue */
+}

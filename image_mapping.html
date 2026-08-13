@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Coordinates Map</title>
+    <style>
+        /* Creates a localized absolute positioning grid layer context over graphics */
+        .map-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        /* Forces clean standard dimensions and prevents layout compression bugs */
+        .map-wrapper img {
+            display: block;
+            width: 400px;
+            height: 300px; 
+        }
+
+        /* Configures default invisible anchor layers sitting directly on top of the images */
+        .hotspot {
+            position: absolute;
+            background: rgba(255, 255, 255, 0); 
+            transition: all 0.2s ease;
+            box-sizing: border-box;
+        }
+
+        /* Triggers a bright highlighting perimeter ring outline when a user hovers over hotspots */
+        .hotspot:hover {
+            background: rgba(255, 67, 67, 0.2); /* Soft red tint fill overlay */
+            outline: 3px solid #ff3333; /* Clean solid crimson boundary vector */
+        }
+
+        /* Measures a rectangular grid overlay spanning exactly 50% width on the left */
+        .box-50 {
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+        }
+        
+        /* Measures a circular layout boundary overlay spanning exactly 50% width on the right */
+        .circle-50 {
+            top: 0;
+            left: 50%;
+            width: 50%;
+            height: 100%; 
+            border-radius: 50%; 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- House Graphic Segment — Symmetrical 50/50 Layout Distribution Split -->
+    <div class="map-wrapper">
+        <img src="2.jpg" alt="House Structure">
+        <a href="https://google.com" target="_blank" class="hotspot box-50" title="Google"></a>
+        <a href="https://linkedin.com" target="_blank" class="hotspot circle-50" title="LinkedIn"></a>
+    </div>
+
+    <!-- Nature Landscape Segment — Symmetrical 50/50 Layout Distribution Split -->
+    <div class="map-wrapper">
+        <img src="nature.jpg" alt="Nature Landscape">
+        <a href="https://youtube.com" target="_blank" class="hotspot box-50" title="YouTube"></a>
+        <a href="https://chess.com" target="_blank" class="hotspot circle-50" title="Chess.com"></a>
+    </div>
+
+</body>
+</html>
